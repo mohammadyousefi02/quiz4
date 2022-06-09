@@ -13,13 +13,13 @@ function Header() {
             checkInputValue()
         }} type="text" placeholder="search by title"/>
         <Box>
-            <span>Min</span>
+            <span>Min: {filterMinPrice}</span>
             <input type="range" value={filterMinPrice} onChange={(e)=>{
                 setFilterMinPrice(e.target.value)
                 checkPriceFilter()
             }} min={5000} max={20000} name="" id="" />
 
-            <span>Max</span>
+            <span>Max: {filterMaxPrice}</span>
             <input type="range" value={filterMaxPrice} onChange={(e)=>{
                 setFilterMaxPrice(e.target.value)
                 checkPriceFilter()

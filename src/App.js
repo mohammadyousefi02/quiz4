@@ -18,11 +18,11 @@ function App() {
   const [filterMinPrice,setFilterMinPrice] = useState(0);
   const [cartProducts,setCardProducts] = useState([]);
   useEffect(()=>{
-    console.log(data)
     const copyProducts = [...products]
     data.forEach(p=>{
       p.quantity = 0;
       p.total = 0;
+      p.price = +p.price
       copyProducts.push(p)
     })
     setProducts(copyProducts)

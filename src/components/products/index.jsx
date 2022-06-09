@@ -8,7 +8,7 @@ import ProductsItem from "../ProductsItem"
 
 function Products() {
   const {filteredProducts} = useContext(IndexContext)
-  console.log(filteredProducts)
+
   return (
     <Box>
       <Grid container spacing={3}>
