@@ -15,7 +15,7 @@ function App() {
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [filterValue,setFilterValue] = useState("");
   const [filterMaxPrice,setFilterMaxPrice] = useState(20000);
-  const [filterMinPrice,setFilterMinPrice] = useState(0);
+  const [filterMinPrice,setFilterMinPrice] = useState(1);
   const [cartProducts,setCardProducts] = useState([]);
   useEffect(()=>{
     const copyProducts = [...products]
@@ -27,6 +27,7 @@ function App() {
     })
     setProducts(copyProducts)
     setFilteredProducts(copyProducts)
+    setFilterMinPrice(0)
   },[])
   function checkInputValue(){
     if(filterValue === ""){
@@ -47,11 +48,16 @@ function App() {
     const copyFilteredProducts = []
     copyProducts.forEach(p=>{
       if(p.price >= filterMinPrice && p.price <= filterMaxPrice){
+        console.log(p)
         copyFilteredProducts.push(p)
       }
     })
     setFilteredProducts(copyFilteredProducts)
   }
+
+  useEffect(()=>{
+    checkPriceFilter()
+  },[filterMaxPrice,filterMinPrice])
 
   return (
     <IndexContext.Provider value={{products,filteredProducts,setFilteredProducts,filterValue,setFilterValue,checkInputValue,checkPriceFilter,filterMaxPrice,filterMinPrice,setFilterMaxPrice,setFilterMinPrice,cartProducts,setCardProducts}}>
