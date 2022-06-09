@@ -1,0 +1,37 @@
+[{
+    "id": "1",
+    "url": "https://react-shopping-cart-seven-lovat.vercel.app/images/dress1.jpg",
+    "title": "Midi sundress with shirring detail",
+    "price": "5000",
+    "inventory": "10"
+}, {
+    "id": "2",
+    "url": "https://react-shopping-cart-seven-lovat.vercel.app/images/dress2.jpg",
+    "title": "Midi sundress with ruched front",
+    "price": "10000",
+    "inventory": "3"
+}, {
+    "id": "3",
+    "url": "https://react-shopping-cart-seven-lovat.vercel.app/images/dress3.jpg",
+    "title": "Midi dress in pink ditsy floral",
+    "price": "12000",
+    "inventory": "12"
+}, {
+    "id": "4",
+    "url": "https://react-shopping-cart-seven-lovat.vercel.app/images/dress4.jpg",
+    "title": "cami maxi dress in polka dot",
+    "price": "15000",
+    "inventory": "10"
+}, {
+    "id": "5",
+    "url": "https://react-shopping-cart-seven-lovat.vercel.app/images/dress5.jpg",
+    "title": "Frill mini dress in yellow polka dot",
+    "price": "18000",
+    "inventory": "5"
+}, {
+    "id": "6",
+    "url": "https://react-shopping-cart-seven-lovat.vercel.app/images/dress6.jpg",
+    "title": "Midi tea dress in blue and red spot",
+    "price": "20000",
+    "inventory": "7"
+}]
